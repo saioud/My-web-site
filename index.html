@@ -1,41 +1,61 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي التجريبي</title>
+  <title>Compte rendu d'analyse medicale</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fff;
+      color: #000;
+      line-height: 1.6;
       text-align: center;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: white;
-      padding: 50px;
     }
-    h1 {
-      font-size: 3em;
+    .title {
+      background: #e5e5e5;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 22px;
       margin-bottom: 20px;
     }
-    p {
-      font-size: 1.2em;
+    .text {
+      margin: 15px 0;
+      font-size: 16px;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 30px;
-      background: white;
-      color: #0072ff;
-      text-decoration: none;
-      border-radius: 8px;
+    a {
+      color: blue;
+      text-decoration: underline;
       font-weight: bold;
     }
-    .btn:hover {
-      background: #f1f1f1;
+    .preview {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+    .preview img {
+      max-width: 95%;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  <h1>👋 مرحباً بك في موقعي التجريبي</h1>
-  <p>تم إنشاء هذه الصفحة باستخدام GitHub Pages.</p>
-  <a class="btn" href="https://github.com" target="_blank">زر تجريبي</a>
+  <div class="title">Compte rendu d'analyse medicale</div>
+
+  <div class="text">
+    Vous pouvez télécharger ce document en cliquant sur <br>
+    <a href="document.pdf" download>Télécharger</a>
+  </div>
+
+  <div class="text">
+    يمكنك تحميل هذا المستند بالنقر على <br>
+    <a href="document.pdf" download>تحميل</a>
+  </div>
+
+  <div class="preview">
+    <!-- هنا تحط صورة المعاينة (screenshot أو نسخة مصغرة من الـ PDF) -->
+    <img src="rapport.png" alt="Aperçu du document médical">
+  </div>
 </body>
 </html>
